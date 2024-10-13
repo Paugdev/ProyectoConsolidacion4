@@ -17,3 +17,7 @@
 header{
     padding: 3%;
 }
+
+#valorFinal{
+    border: 2px black solid;
+}

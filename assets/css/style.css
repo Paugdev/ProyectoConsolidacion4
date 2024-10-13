@@ -1,3 +1,19 @@
+
+.carousel-custom-size {
+    width: 75%; /* Puedes ajustar el porcentaje de acuerdo a tu necesidad */
+    height: 300px; /* Ajusta la altura */
+    margin: 0 auto; /* Centrar el carrusel horizontalmente */
+}
+
+.carousel-custom-size img {
+    height: 100%; /* Hacer que las imágenes llenen la altura del contenedor */
+    object-fit: cover; /* Ajustar las imágenes dentro del carrusel */
+}
+
 .card {
     margin-bottom: 20px; /* Espaciado entre tarjetas */
+}
+
+header{
+    padding: 3%;
 }

@@ -8,7 +8,32 @@
     <link rel="stylesheet" href="./assets/css/bscss/bootstrap.min.css">
 </head>
 <body onload="asignarEventos()">
-    <div class="container mt-5">
+    <header>
+        <div class="container mt-5">
+            <!-- Carrusel -->
+            <div id="carouselExampleAutoplaying" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/pepinos.jpg" class="d-block w-100" alt="Pepinos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/bombon.jpg" class="d-block w-100" alt="Bombón">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/hortalizas.jpg" class="d-block w-100" alt="Hortalizas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </header>
+    <div class="container mt-5" id="tarjetas">
         <h2>Productos Disponibles</h2>
         <div class="row"> 
             <!-- Mandarinas -->
@@ -35,7 +60,7 @@
                 </div>
             </div>
 
-            <!-- Tarjeta de Uvas -->
+            <!-- Uvas -->
             <div class="col-md-4"> 
                 <div class="card" id="Uvas">
                     <img src="./assets/img/uvas.jpg" class="card-img-top" alt="Uvas">
@@ -47,7 +72,7 @@
                 </div>
             </div>
 
-            <!-- Tarjeta de Sandía -->
+            <!--Sandía -->
             <div class="col-md-4"> 
                 <div class="card" id="Sandia">
                     <img src="./assets/img/Sandia.jpg" class="card-img-top" alt="Sandia">
@@ -59,7 +84,7 @@
                 </div>
             </div>
 
-            <!-- Tarjeta de Tomate -->
+            <!--Tomate -->
             <div class="col-md-4"> 
                 <div class="card" id="Tomate">
                     <img src="./assets/img/toomates.jpeg" class="card-img-top" alt="Tomate">
@@ -70,7 +95,7 @@
                     </div>
                 </div>
             </div>
-                    <!-- Tarjeta de Avellanas -->
+                    <!-- Avellanas -->
                     <div class="col-md-4"> 
                         <div class="card" id="Avellanas">
                             <img src="./assets/img/frutos.jpeg" class="card-img-top" alt="Avellanas">
@@ -93,6 +118,6 @@
     </div>
     <p id="prfDetallesCompra"></p>
     <script src="/assets/js/script.js"></script>
-    <source src="assets/js/bsjs/bootstrap.bundle.min.js">
+    <script src="assets/js/bsjs/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bscss/bootstrap.min.css">
+</head>
+<body onload="asignarEventos()">
+    <div class="container mt-5">
+        <h2>Productos Disponibles</h2>
+        <div class="row"> 
+            <!-- Mandarinas -->
+            <div class="col-md-4"> <!-- Columna para la tarjeta -->
+                <div class="card" id="Mandarinas">
+                    <img src="./assets/img/mandarinas.jpg" class="card-img-top" alt="Mandarinas">
+                    <div class="card-body">
+                        <p class="card-text">Mandarinas 1/2 Kg - $800</p>
+                        <p id="cantidadElement">Cantidad:</p>
+                        <input type="number" id="txtMandarinas" class="form-control"> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caramelos -->
+            <div class="col-md-4"> 
+                <div class="card" id="Caramelos">
+                    <img src="./assets/img/caramelos.jpg" class="card-img-top" alt="Caramelos">
+                    <div class="card-body">
+                        <p class="card-text">Caramelos 1/4 kg - $1500</p>
+                        <p id="cantidadElement">Cantidad:</p>
+                        <input type="number" id="txtCaramelos" class="form-control"> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Uvas -->
+            <div class="col-md-4"> 
+                <div class="card" id="Uvas">
+                    <img src="./assets/img/uvas.jpg" class="card-img-top" alt="Uvas">
+                    <div class="card-body">
+                        <p class="card-text">Uvas 1 kg - $1690</p>
+                        <p id="cantidadElement">Cantidad:</p>
+                        <input type="number" id="txtUva" class="form-control"> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Sandía -->
+            <div class="col-md-4"> 
+                <div class="card" id="Sandia">
+                    <img src="./assets/img/Sandia.jpg" class="card-img-top" alt="Sandia">
+                    <div class="card-body">
+                        <p class="card-text">Sandías 1 unidad - $4650</p>
+                        <p id="cantidadElement">Cantidad:</p>
+                        <input type="number" id="txtSandia" class="form-control"> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Tomate -->
+            <div class="col-md-4"> 
+                <div class="card" id="Tomate">
+                    <img src="./assets/img/toomates.jpeg" class="card-img-top" alt="Tomate">
+                    <div class="card-body">
+                        <p class="card-text">Tomate 1 kg - $2000</p>
+                        <p id="cantidadElement">Cantidad:</p>
+                        <input type="number" id="txtTomate" class="form-control"> 
+                    </div>
+                </div>
+            </div>
+                    <!-- Tarjeta de Avellanas -->
+                    <div class="col-md-4"> 
+                        <div class="card" id="Avellanas">
+                            <img src="./assets/img/frutos.jpeg" class="card-img-top" alt="Avellanas">
+                            <div class="card-body">
+                                <p class="card-text"> Avellanas 350g - $3890</p>
+                                <p id="cantidadElement">Cantidad:</p>
+                                <input type="number" id="txtAvellana" class="form-control"> 
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        
+        <input type="button" value="Calcular" id="btnCalcular" class="btn btn-primary mt-3">
+    </div>
+
+    <div class="container mt-5">
+        <p>Valor Final a Pagar: <span id="txtValorFinalAPagar">0</span></p>
+        <h3>Detalles de la compra:</h3>
+        <p id="prfDetallesCompra"></p>
+    </div>
+    <p id="prfDetallesCompra"></p>
+    <script src="/assets/js/script.js"></script>
+    <source src="assets/js/bsjs/bootstrap.bundle.min.js">
+</body>
+</html>

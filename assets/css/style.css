@@ -9,14 +9,14 @@ body{
 
 
 .carousel-custom-size {
-    width: 75%; /* Puedes ajustar el porcentaje de acuerdo a tu necesidad */
-    height: 300px; /* Ajusta la altura */
-    margin: 0 auto; /* Centrar el carrusel horizontalmente */
+    width: 75%; 
+    height: 300px; 
+    margin: 0 auto; 
 }
 
 .carousel-custom-size img {
-    height: 100%; /* Hacer que las imágenes llenen la altura del contenedor */
-    object-fit: cover; /* Ajustar las imágenes dentro del carrusel */
+    height: 100%; 
+    object-fit: cover; 
 }
 
 .title{
@@ -43,7 +43,7 @@ h2{
 
 
 .card {
-    margin-bottom: 20px; /* Espaciado entre tarjetas */
+    margin-bottom: 20px; 
     padding: 5%;
     border-radius: 3%;
     font-family: "Hind Siliguri", sans-serif;
@@ -67,17 +67,17 @@ header{
 }
 
 .btn {
-    background-color: #4CAF50; /* Verde inicial */
+    background-color: #be3886; 
     color: white;
     padding: 15px 32px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease; /* Transición suave */
+    transition: all 0.3s ease; 
 }
 
 .btn:hover {
-    background-color: #45a049; /* Cambia el color al pasar el ratón */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    background-color: #45a049; 
+    transform: scale(1.1);
 }
 

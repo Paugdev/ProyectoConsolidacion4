@@ -3,7 +3,7 @@ let asignarEventos = () => {
     btnCalcular.addEventListener('click', integracion);
 
     let elBotonPagar = document.getElementById('btnPagar');
-    elBotonPagar.addEventListener('click', pagar)
+    elBotonPagar.addEventListener('click', pagar);
 
 
 }

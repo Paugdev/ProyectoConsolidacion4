@@ -1,6 +1,11 @@
 let asignarEventos = () => {
     let btnCalcular = document.getElementById('btnCalcular');
     btnCalcular.addEventListener('click', integracion);
+
+    let elBotonPagar = document.getElementById('btnPagar');
+    elBotonPagar.addEventListener('click', pagar)
+
+
 }
 
 class Producto {
@@ -34,6 +39,14 @@ class Carrito {
     finalizarCompra() {
         let elTxtValorFinalAPagar = document.getElementById('txtValorFinalAPagar');
         elTxtValorFinalAPagar.innerText = this.valorFinalAPagar; // Mostrar total en el DOM
+
+        let elBotonPagar = document.getElementById('btnPagar');
+
+        if (this.valorFinalAPagar > 0) {
+            elBotonPagar.style.display = 'block'; // Mostrar el botón si hay productos
+        } else {
+            elBotonPagar.style.display = 'none'; // Ocultar el botón si no hay productos
+        }
     }
 
     mostrarDetallesCompra() {
@@ -41,11 +54,13 @@ class Carrito {
         let elPrfDetallesCompra = document.getElementById('prfDetallesCompra');
         for (const producto of this.productos) {
             if (producto.cantidad > 0) {
-                mensaje += `Producto: ${producto.nombre}, Precio: $${producto.precio}, Cantidad: ${producto.cantidad} <br>`; 
+                mensaje += `Producto: ${producto.nombre} <br> Precio: $${producto.precio} <br> Cantidad: ${producto.cantidad} <br>`; 
             }
         }
         elPrfDetallesCompra.innerHTML = mensaje; // Mostrar detalles en el DOM
     }
+
+    
 }
 
 let atraparDatos = () => {
@@ -90,7 +105,7 @@ let atraparDatos = () => {
     let cantidadAvellana = Number(document.getElementById('txtAvellana').value);
     if (cantidadAvellana > 0) {
         let objAvellana = new Producto('Avellanas', valorAvellana, cantidadAvellana);
-        objCarrito.agregarProductos(objAvellana);
+        objCarrito.agregarProductos(objAvellana );
     }
 
     objCarrito.calcularTotalCompra(); // Calcular el total
@@ -102,4 +117,13 @@ let integracion = () => {
     let elCarritoDeCompras = atraparDatos(); // Atrapar datos y crear carrito
     console.log(elCarritoDeCompras); // Mostrar carrito en consola
     elCarritoDeCompras.mostrarDetallesCompra(); // Mostrar detalles
+
+}
+
+pagar =()=>{
+    document.getElementById('valorFinal').innerHTML = '';
+
+    // Mostrar el modal
+    let modal = new bootstrap.Modal(document.getElementById('modalCompra'));
+    modal.show();
 }

@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Rozha+One&display=swap');
+
+body{
+    background: rgb(255,212,231);
+    background: radial-gradient(circle, rgba(255,212,231,1) 0%, rgba(249,165,138,1) 100%);
+}
+
 
 .carousel-custom-size {
     width: 75%; /* Puedes ajustar el porcentaje de acuerdo a tu necesidad */
@@ -10,14 +19,65 @@
     object-fit: cover; /* Ajustar las imágenes dentro del carrusel */
 }
 
+.title{
+    text-align: center;
+    font-family: "Spicy Rice",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+
+
+}
+
+h1{
+    font-size: 100px;
+}
+
+h2{
+    font-family: "Rozha One", sans-serif;
+    padding: 2%;
+    text-align: center;
+    font-size: 90px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
 .card {
     margin-bottom: 20px; /* Espaciado entre tarjetas */
+    padding: 5%;
+    border-radius: 3%;
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 30px;
 }
 
 header{
     padding: 3%;
 }
 
+
 #valorFinal{
-    border: 2px black solid;
+    background-color: white;
+    font-family:"Hind Siliguri", sans-serif;
+    font-size: 30px;
+
+    h3{
+        font-size: 40px;
+
+    }
 }
+
+.btn {
+    background-color: #4CAF50; /* Verde inicial */
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #45a049; /* Cambia el color al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
